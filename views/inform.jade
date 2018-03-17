@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/inform.css')
+  body
+    block content
+    h2 #{inform.title}
+    <p class="informDate">发布时间:#{inform.date}<p>
+    .newContent 
+        !{inform.content.entry}
+

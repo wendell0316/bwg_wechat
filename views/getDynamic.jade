@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title= title
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='http://res.wx.qq.com/open/libs/weui/0.4.0/weui.min.css')
+  body(ontouchstart)
+    block content
+    .informPic
+        img.picRes(src="./images/top_bg.png", alt="")
+    .weui_cells
+            -for (var i = 0; i < informs.length; ++i) {
+                    a.weui_cell.weui_cells_access(href='./getDynamic/#{i}')
+                        .weui_cell_bd.weui_cell_primary
+                            p #{informs[i].title}
+                        .weui_cell_ft
+                
+            - }

@@ -1,0 +1,17 @@
+
+a {
+  color: #00B7FF;
+}
+h2{
+  text-align: center
+}
+.informDate{
+  text-align: center;
+	color: #888;
+}
+.picRes{
+	max-width: 100%;
+}
+.weui_cells p{
+  text-indent: -5px;
+}
